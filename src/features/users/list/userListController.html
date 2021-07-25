@@ -1,0 +1,22 @@
+<div>
+    <h3>
+        {{ title }}
+    </h3>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Active</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{ user.firstName + " " + user.lastName }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.active ? 'Yes' : 'No' }}</td>
+        </tr>        
+    </tbody>
+</table>
